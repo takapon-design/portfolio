@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKAKOYAGUCHIportfolio</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap-4.6.2-dist/css/bootstrap.min.css">
+
+     <!-- slick-slider -->
+     <link rel="stylesheet" href="./plugins/slick-1.8.1/slick.css">
+     <link rel="stylesheet" href="./plugins/slick-1.8.1/slick-theme.css">
+ 
+     <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-5/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-5/css/8-5.css">
+
+</head>
+<body>
+
+<section class="top-area">
+<img class="logo" src="./SVG/1.svg" alt="タイトルです">
+
+<div class="navigation__set">
+<nav class="top-navigation">
+    <ul class="nav__list-area">
+        <li class="nav-list nav-list-1"><a class="nav-link" href="#">たかこのこと</a></li>
+        <li class="nav-list nav-list-2"><a class="nav-link" href="#">たかこのこと</a></li>
+        <li class="nav-list nav-list-3"><a class="nav-link" href="#">たかこのこと</a></li>
+        <li class="nav-list nav-list-4"><a class="nav-link" href="#">たかこのこと</a></li>
+        <li class="nav-list nav-list-5"><a class="nav-link" href="#">たかこのこと</a></li>
+        <li class="nav-list nav-list-6"><a class="nav-link" href="#">たかこのこと</a></li>
+    
+    </ul>
+</nav>
+ 
+
+</div><!-- navigation__set -->
+
+</section>
+   
+ 
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+ <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-5/js/8-5.js"></script>
+ 
+     <script src="./jquery/3.5.1/jquery.min.js"></script> 
+     <script src="./plugins/slick-1.8.1/slick.min.js"></script>
+     <script src="./bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+     <script>
+         $(".slick-slider").slick({
+       //自動再生を 0N に設定
+       autoplay: true,
+       //表示するスライド枚数を 1枚 に設定する
+       slidesToShow: 1,
+     })
+     $(".staff-slider").slick({
+       //自動再生を 0N に設定
+       autoplay: true,
+       //表示するスライド枚数を 5枚 に設定する
+       slidesToShow: 5,
+       responsive: [
+         {
+             breakpoint: 1024, // 768〜1023px以下のサイズに適用
+             settings: {
+                 slidesToShow: 3,
+             },
+         },
+         {
+             breakpoint: 768, // 480〜767px以下のサイズに適用
+             settings: {
+                 slidesToShow: 2,
+             },
+         },
+         {
+             breakpoint: 480, //　〜479px以下のサイズに適用
+             settings: {
+                 slidesToShow: 1,
+             },
+         },
+       ]
+     });
+     </script>
+ </body>
+ </html>
